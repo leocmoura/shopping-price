@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from mercado.models import Produtos
+from mercado.models import Produto
 
 class ProdutoSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Produtos
-        fields = ['__all__']
+        model = Produto
+        fields = ['id', 'nome']

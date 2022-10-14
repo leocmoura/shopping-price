@@ -1,7 +1,7 @@
 from email.policy import default
 from django.db import models
 
-class Produtos(models.Model):
+class Produto(models.Model):
     CATEGORIA = (
         ('0', 'Escolha uma categoria'),
         ('1', 'Padaria'),
@@ -17,3 +17,6 @@ class Produtos(models.Model):
     nome = models.CharField(max_length=20)
     preco = models.FloatField()
     marca = models.CharField(max_length=15)
+
+    def __str__(self):
+        return self.nome
