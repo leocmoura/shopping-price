@@ -7,7 +7,7 @@ class Category(models.Model):
     def __str__(self):
         return self.category_name
 
-class Produto(models.Model):
+class Product(models.Model):
     # CATEGORIA = (
     #     ('0', 'Escolha uma categoria'),
     #     ('1', 'Padaria'),
