@@ -9,6 +9,6 @@ class Products(admin.ModelAdmin):
 admin.site.register(Product, Products)
 
 class Categorys(admin.ModelAdmin):
-    list_display = ('id', 'category_name')
+    list_display = ('name',)
 
 admin.site.register(Category, Categorys)
